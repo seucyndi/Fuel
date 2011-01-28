@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="price">当前油价</string>
+<string name="unit_price">元/升</string>
+<string name="metre">累计行驶</string>
+<string name="unit_metre">公里</string>
+<string name="total">加油金额</string>
+<string name="unit_total">元</string>
+<string name="full">加满</string>
+<string name="done">完成</string>
+<string name="cancel">丢弃</string>
+<string name="app_name">油耗统计</string>
+<string name="hint_msg_net">网络问题，无法获取油价数据!</string>
+<string name="hint_msg_unknown">程序发生异常!</string>
+</resources>

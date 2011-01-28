@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+<ScrollView 
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:layout_weight="1"
+	>
+     
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="5sp">
+	<TextView
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="@string/price"
+		android:paddingRight="5sp"
+		/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="5sp">
+		<Spinner android:id="@+id/type"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:entries="@array/oiltype"
+			/>
+		<ImageButton android:id="@+id/lower"
+			android:src="@drawable/lower"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+		<EditText
+			android:id="@+id/price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:numeric="integer"
+			/>
+		<ImageButton android:id="@+id/upper"
+			android:src="@drawable/upper"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+		<TextView  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/unit_price"
+			android:paddingLeft="5sp"
+			/>
+	</LinearLayout>
+	
+	<TextView  
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="@string/total"
+		android:paddingRight="5sp"
+		/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="5sp">
+		<CheckBox android:id="@+id/full"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/full"
+			android:paddingRight="5sp"
+			/>
+		<ImageButton android:id="@+id/lower2"
+			android:src="@drawable/lower"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+		<EditText
+			android:id="@+id/itemprice"
+			android:text="200"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:numeric="integer"
+			android:layout_weight="1"
+			/>
+		<ImageButton android:id="@+id/upper2"
+			android:src="@drawable/upper"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			/>
+		<TextView  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/unit_total"
+			android:paddingLeft="5sp"
+			/>
+	</LinearLayout>
+
+	<TextView  
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="@string/metre"
+		android:paddingRight="5sp"
+		/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="5sp">
+		<EditText
+			android:id="@+id/metre"
+			android:text="40000"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:numeric="integer"
+			android:layout_weight="1"
+			/>
+		<TextView  
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/unit_metre"
+			android:paddingLeft="5sp"
+			/>
+	</LinearLayout>
+</LinearLayout>
+
+</ScrollView>
+
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="5sp">
+		<Button android:id="@+id/done"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/done"
+			android:paddingRight="10sp"
+			android:layout_weight="1"
+			/>
+		<Button android:id="@+id/cancel"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/cancel"
+			android:layout_weight="1"
+			/>
+	</LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>
